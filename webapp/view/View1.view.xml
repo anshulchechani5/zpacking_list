@@ -1,0 +1,31 @@
+<mvc:View controllerName="zpackinglist.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+    <Page id="page">
+         <content>  
+            <f:SimpleForm id="FirstSimpleForm" layout="ResponsiveGridLayout" columnsL="2" columnsXL="2" columnsM="2" editable="true">
+               <f:content>
+                    <core:Title id="Coretitle"/>        
+                    <Label id="pl" text=" Delvery No." required="true" />
+                    <Input width="350px" id="delveryno" valueHelpRequest="onf4dev" showValueHelp="true" placeholder="Enter Delvery No." ></Input>
+               <core:Title/>
+                <Label id="pl1" text=" Delvery No. To" required="true" />
+                    <Input width="350px" id="delverynoto" valueHelpRequest="onf4dev1" showValueHelp="true" placeholder="Enter Delvery No." ></Input>
+                </f:content>
+             </f:SimpleForm>
+         </content>
+          <Bar id="kl" >
+              <contentRight >
+                   <Button width="150px" id="op" icon="sap-icon://print" text="Print" press="oncheck" /> 
+            </contentRight> 
+         </Bar>
+           
+        <!-- <footer>
+            <Bar id="kl">
+              <contentRight>
+                   <Button id="op" icon="sap-icon://print" text="Print" press="oncheck" /> 
+            </contentRight> 
+            </Bar>
+        </footer> -->
+    </Page>
+</mvc:View>
